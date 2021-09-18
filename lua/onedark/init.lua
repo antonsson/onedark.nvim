@@ -8,13 +8,13 @@ local function colorscheme()
     if vim.fn.exists("syntax_on") then vim.cmd("syntax reset") end
     vim.o.background = "dark"
     vim.o.termguicolors = true
-     vim.g.colors_name = "onedark"
+    vim.g.colors_name = "onedark"
     highlights.setup()
     terminal.setup()
 end
 
 function M.toggle()
-    local styles = { 'dark', 'darker', 'cool', 'deep', 'warm' , 'warmer'}
+    local styles = { 'dark', 'darker', 'cool', 'deep', 'warm' , 'warmer', 'custom'}
     local index={}
     for k,v in pairs(styles) do index[v]=k end
     vim.g.onedark_style = styles[index[vim.g.onedark_style] + 1] or 'dark'
