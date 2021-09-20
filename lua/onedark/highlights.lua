@@ -148,7 +148,7 @@ hl.treesitter = {
     TSConstructor = {fg = c.yellow, bold = true},
     TSError = colors.Fg,
     TSException = colors.Purple,
-    TSField = colors.Cyan,
+    TSField = colors.Fg,
     TSFloat = colors.Orange,
     TSFunction = colors.Blue,
     TSFuncBuiltin = colors.Cyan,
@@ -191,7 +191,7 @@ hl.treesitter = {
     TSNote = colors.Fg,
     TSWarning = colors.Fg,
     TSDanger = colors.Fg,
-    TSType = colors.Yellow,
+    TSType = colors.Fg,
     TSTypeBuiltin = colors.Orange,
     TSVariable = colors.Fg,
     TSVariableBuiltin = colors.Red
